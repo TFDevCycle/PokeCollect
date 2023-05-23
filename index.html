@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Pokémon Card Collection</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <nav>
+    <div class="nav-container">
+      <h1 class="logo">Pokémon Card Collection</h1>
+      <input type="text" id="searchInput" placeholder="Search by name">
+      <button id="addCardButton">Add Card</button>
+    </div>
+  </nav>
+
+  <main>
+    <div id="cardList"></div>
+  </main>
+
+  <!-- Add Card Modal -->
+  <div id="addCardModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Add Card</h2>
+      <form id="addCardForm">
+        <label for="cardName">Card Name:</label>
+        <input type="text" id="cardName" required>
+        <br>
+        <label for="cardImage">Image URL:</label>
+        <input type="url" id="cardImage" required>
+        <br>
+        <label for="cardAmount">Amount:</label>
+        <input type="number" id="cardAmount" required>
+        <br>
+        <button type="submit">Add Card</button>
+      </form>
+    </div>
+  </div>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
