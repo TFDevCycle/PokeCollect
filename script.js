@@ -1,103 +1,315 @@
 // Card Data (Sample Data)
-const cardData = [
+const deck1 = [
   {
     "name": "Deoxys-V",
-    "image": "https://example.com/deoxys-v.jpg",
+    "image": "https://images.pokemontcg.io/swshp/SWSH266_hires.png",
     "amount": 1
   },
   {
     "name": "Gardevoir",
-    "image": "https://example.com/gardevoir.jpg",
+    "image": "https://images.pokemontcg.io/20.png",
     "amount": 2
   },
   {
     "name": "Kirlia",
-    "image": "https://example.com/kirlia.jpg",
+    "image": "https://images.pokemontcg.io/20.png",
     "amount": 3
   },
   {
     "name": "Ralts",
-    "image": "https://example.com/ralts.jpg",
+    "image": "https://images.pokemontcg.io/20.png",
     "amount": 4
   },
   {
     "name": "Hatterene",
-    "image": "https://example.com/hatterene.jpg",
+    "image": "https://images.pokemontcg.io/20.png",
     "amount": 2
   },
   {
     "name": "Hattrem",
-    "image": "https://example.com/hattrem.jpg",
+    "image": "https://images.pokemontcg.io/20.png",
     "amount": 3
   },
   {
     "name": "Hatenna",
-    "image": "https://example.com/hatenna.jpg",
+    "image": "https://images.pokemontcg.io/20.png",
     "amount": 2
   },
   {
     "name": "Cresselia",
-    "image": "https://example.com/cresselia.jpg",
+    "image": "https://images.pokemontcg.io/20.png",
     "amount": 1
   },
   {
     "name": "Bug Catcher",
-    "image": "https://example.com/bug-catcher.jpg",
+    "image": "https://images.pokemontcg.io/sm11/189_hires.png",
     "amount": 2
   },
   {
     "name": "Chef's Special",
-    "image": "https://example.com/chefs-special.jpg",
+    "image": "https://images.pokemontcg.io/swsh8/228_hires.png",
     "amount": 1
   },
   {
     "name": "Evolution Incense",
-    "image": "https://example.com/evolution-incense.jpg",
+    "image": "https://images.pokemontcg.io/swsh1/163_hires.png",
     "amount": 2
   },
   {
     "name": "Great Ball",
-    "image": "https://example.com/great-ball.jpg",
+    "image": "https://images.pokemontcg.io/sm35/60_hires.png",
     "amount": 4
   },
   {
     "name": "Arena Trainer",
-    "image": "https://example.com/arena-trainer.jpg",
+    "image": "https://images.pokemontcg.io/swsh45/59_hires.png",
     "amount": 2
   },
   {
     "name": "Hop",
-    "image": "https://example.com/hop.jpg",
+    "image": "https://images.pokemontcg.io/swsh35/53.png",
     "amount": 4
   },
   {
     "name": "Lucky Ice Pop",
-    "image": "https://example.com/lucky-ice-pop.jpg",
+    "image": "https://images.pokemontcg.io/swsh7/150_hires.png",
     "amount": 1
   },
   {
     "name": "Sonia",
-    "image": "https://example.com/sonia.jpg",
+    "image": "https://images.pokemontcg.io/swsh35/65_hires.png",
     "amount": 2
   },
   {
     "name": "Piers",
-    "image": "https://example.com/piers.jpg",
+    "image": "https://images.pokemontcg.io/swsh35/58_hires.png",
     "amount": 1
   },
   {
     "name": "Pokémon Communication",
-    "image": "https://example.com/pokemon-communication.jpg",
+    "image": "https://images.pokemontcg.io/sm9/152_hires.png",
     "amount": 2
   },
   {
     "name": "Psynergy Brace",
-    "image": "https://example.com/psynergy-brace.jpg",
+    "image": "https://images.pokemontcg.io/dp1/127_hires.png",
     "amount": 18
   }
 ];
-
-
+const deck2 = [
+  {
+    "name": "Venusaur V",
+    "image": "https://images.pokemontcg.io/20.png",
+    "amount": 1
+  },
+  {
+    "name": "Yanmega",
+    "image": "https://images.pokemontcg.io/20.pngg",
+    "amount": 2
+  },
+  {
+    "name": "Yanma",
+    "image": "https://images.pokemontcg.io/20.png",
+    "amount": 3
+  },
+  {
+    "name": "Gogoat",
+    "image": "https://images.pokemontcg.io/20.png",
+    "amount": 2
+  },
+  {
+    "name": "Skiddo",
+    "image": "https://images.pokemontcg.io/20.png",
+    "amount": 3
+  },
+  {
+    "name": "Eldegoss",
+    "image": "https://images.pokemontcg.io/20.png",
+    "amount": 1
+  },
+  {
+    "name": "Gossifleur",
+    "image": "https://images.pokemontcg.io/20.png",
+    "amount": 2
+  },
+  {
+    "name": "Durant",
+    "image": "https://images.pokemontcg.io/20.png",
+    "amount": 3
+  },
+  {
+    "name": "Heracross",
+    "image": "https://images.pokemontcg.io/20.png",
+    "amount": 2
+  },
+  {
+    "name": "Indeedee",
+    "image": "https://images.pokemontcg.io/20.png",
+    "amount": 2
+  },
+  {
+    "name": "Bede",
+    "image": "https://images.pokemontcg.io/20.png",
+    "amount": 2
+  },
+  {
+    "name": "Dan",
+    "image": "https://images.pokemontcg.io/20.png",
+    "amount": 4
+  },
+  {
+    "name": "Evolution Incense",
+    "image": "https://images.pokemontcg.io/20.png",
+    "amount": 1
+  },
+  {
+    "name": "Great Ball",
+    "image": "https://images.pokemontcg.io/20.png",
+    "amount": 2
+  },
+  {
+    "name": "Gym Trainer",
+    "image": "https://images.pokemontcg.io/20.png",
+    "amount": 2
+  },
+  {
+    "name": "Hop",
+    "image": "https://images.pokemontcg.io/20.png",
+    "amount": 4
+  },
+  {
+    "name": "Pokémon Catcher",
+    "image": "https://images.pokemontcg.io/20.png",
+    "amount": 1
+  },
+  {
+    "name": "Potion",
+    "image": "https://images.pokemontcg.io/20.png",
+    "amount": 2
+  },
+  {
+    "name": "Sonia",
+    "image": "https://images.pokemontcg.io/20.png",
+    "amount": 1
+  },
+  {
+    "name": "Switch",
+    "image": "https://images.pokemontcg.io/20.png",
+    "amount": 2
+  },
+  {
+    "name": "Grass Energy",
+    "image": "https://images.pokemontcg.io/20.png",
+    "amount": 18
+  }
+];
+const deck3 = [
+  {
+    "name": "Venusaur V",
+    "image": "https://images.pokemontcg.io/20.png",
+    "amount": 1
+  },
+  {
+    "name": "Miraidon",
+    "image": "https://images.pokemontcg.io/20.pngg",
+    "amount": 2
+  },
+  {
+    "name": "Yanma",
+    "image": "https://images.pokemontcg.io/20.png",
+    "amount": 3
+  },
+  {
+    "name": "Gogoat",
+    "image": "https://images.pokemontcg.io/20.png",
+    "amount": 2
+  },
+  {
+    "name": "Skiddo",
+    "image": "https://images.pokemontcg.io/20.png",
+    "amount": 3
+  },
+  {
+    "name": "Eldegoss",
+    "image": "https://images.pokemontcg.io/20.png",
+    "amount": 1
+  },
+  {
+    "name": "Gossifleur",
+    "image": "https://images.pokemontcg.io/20.png",
+    "amount": 2
+  },
+  {
+    "name": "Durant",
+    "image": "https://images.pokemontcg.io/20.png",
+    "amount": 3
+  },
+  {
+    "name": "Heracross",
+    "image": "https://images.pokemontcg.io/20.png",
+    "amount": 2
+  },
+  {
+    "name": "Indeedee",
+    "image": "https://images.pokemontcg.io/20.png",
+    "amount": 2
+  },
+  {
+    "name": "Bede",
+    "image": "https://images.pokemontcg.io/20.png",
+    "amount": 2
+  },
+  {
+    "name": "Dan",
+    "image": "https://images.pokemontcg.io/20.png",
+    "amount": 4
+  },
+  {
+    "name": "Evolution Incense",
+    "image": "https://images.pokemontcg.io/20.png",
+    "amount": 1
+  },
+  {
+    "name": "Great Ball",
+    "image": "https://images.pokemontcg.io/20.png",
+    "amount": 2
+  },
+  {
+    "name": "Gym Trainer",
+    "image": "https://images.pokemontcg.io/20.png",
+    "amount": 2
+  },
+  {
+    "name": "Hop",
+    "image": "https://images.pokemontcg.io/20.png",
+    "amount": 4
+  },
+  {
+    "name": "Pokémon Catcher",
+    "image": "https://images.pokemontcg.io/20.png",
+    "amount": 1
+  },
+  {
+    "name": "Potion",
+    "image": "https://images.pokemontcg.io/20.png",
+    "amount": 2
+  },
+  {
+    "name": "Sonia",
+    "image": "https://images.pokemontcg.io/20.png",
+    "amount": 1
+  },
+  {
+    "name": "Switch",
+    "image": "https://images.pokemontcg.io/20.png",
+    "amount": 2
+  },
+  {
+    "name": "Grass Energy",
+    "image": "https://images.pokemontcg.io/20.png",
+    "amount": 18
+  }
+];
 // Function to display the cards
 function displayCards(cards) {
   const cardList = document.getElementById('cardList');
@@ -126,8 +338,6 @@ function displayCards(cards) {
 }
 
 // Display all cards initially
-displayCards(cardData);
-
 // Function to filter cards based on search input
 function filterCards() {
   const searchInput = document.getElementById('searchInput');
@@ -146,11 +356,26 @@ document.getElementById('searchInput').addEventListener('input', filterCards);
 // Modal functionality
 const addCardModal = document.getElementById('addCardModal');
 const addCardButton = document.getElementById('addCardButton');
+const deck1Button = document.getElementById('deck1Button');
+const deck2Button = document.getElementById('deck2Button');
+const deck3Button = document.getElementById('deck3Button');
 const closeButton = document.getElementsByClassName('close')[0];
 
 // Open the modal
 addCardButton.addEventListener('click', function() {
   addCardModal.style.display = 'block';
+});
+
+deck1Button.addEventListener('click', function() {
+  displayCards(deck1);
+});
+
+deck2Button.addEventListener('click', function() {
+  displayCards(deck2);
+});
+
+deck3Button.addEventListener('click', function() {
+  displayCards(deck3);
 });
 
 // Close the modal

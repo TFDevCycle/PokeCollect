@@ -37,13 +37,13 @@ nav {
   font-size: 16px;
 }
 
-#addCardButton {
+#addCardButton, #deck1Button, #deck2Button, #deck3Button {
   padding: 10px 20px;
   border-radius: 5px;
   border: none;
   background-color: #fff;
   color: #e53935;
-  font-size: 16px;
+  font-size: 12px;
   font-weight: bold;
   text-transform: uppercase;
   cursor: pointer;
@@ -80,9 +80,9 @@ main {
 }
 
 .card img {
-  width: 214px;
-  height: 297px;
-  object-fit: contain;
+  width: 110px;
+  height: 150px;
+  object-fit: fill;
   margin-bottom: 10px;
   border-radius: 5%;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
