@@ -96,10 +96,11 @@ const deck1 = [
     "amount": 18
   }
 ];
+
 const deck2 = [
   {
     "name": "Venusaur V",
-    "image": "https://images.pokemontcg.io/20.png",
+    "image": "https://images.pokemontcg.io/swshp/SWSH100_hires.png",
     "amount": 1
   },
   {
@@ -203,91 +204,87 @@ const deck2 = [
     "amount": 18
   }
 ];
+
 const deck3 = [
   {
-    "name": "Venusaur V",
+    "name": "Ampharos ex",
+    "image": "https://images.pokemontcg.io/xy7/27_hires.png",
+    "amount": 1
+  },
+  {
+    "name": "Flaaffy",
+    "image": "https://images.pokemontcg.io/20.png",
+    "amount": 2
+  },
+  {
+    "name": "Mareep",
+    "image": "https://images.pokemontcg.io/20.png",
+    "amount": 3
+  },
+  {
+    "name": "Kilowattrel",
+    "image": "https://images.pokemontcg.io/20.png",
+    "amount": 3
+  },
+  {
+    "name": "Wattrel",
+    "image": "https://images.pokemontcg.io/20.png",
+    "amount": 3
+  },
+  {
+    "name": "Staraptor",
     "image": "https://images.pokemontcg.io/20.png",
     "amount": 1
+  },
+  {
+    "name": "Staravia",
+    "image": "https://images.pokemontcg.io/20.png",
+    "amount": 2
+  },
+  {
+    "name": "Starly",
+    "image": "https://images.pokemontcg.io/20.png",
+    "amount": 3
   },
   {
     "name": "Miraidon",
-    "image": "https://images.pokemontcg.io/20.pngg",
-    "amount": 2
+    "image": "https://images.pokemontcg.io/sv1/80_hires.png",
+    "amount": 1
   },
   {
-    "name": "Yanma",
-    "image": "https://images.pokemontcg.io/20.png",
-    "amount": 3
-  },
-  {
-    "name": "Gogoat",
+    "name": "Rotom",
     "image": "https://images.pokemontcg.io/20.png",
     "amount": 2
   },
   {
-    "name": "Skiddo",
-    "image": "https://images.pokemontcg.io/20.png",
-    "amount": 3
-  },
-  {
-    "name": "Eldegoss",
+    "name": "Flamigo",
     "image": "https://images.pokemontcg.io/20.png",
     "amount": 1
   },
   {
-    "name": "Gossifleur",
-    "image": "https://images.pokemontcg.io/20.png",
-    "amount": 2
-  },
-  {
-    "name": "Durant",
-    "image": "https://images.pokemontcg.io/20.png",
-    "amount": 3
-  },
-  {
-    "name": "Heracross",
-    "image": "https://images.pokemontcg.io/20.png",
-    "amount": 2
-  },
-  {
-    "name": "Indeedee",
-    "image": "https://images.pokemontcg.io/20.png",
-    "amount": 2
-  },
-  {
-    "name": "Bede",
-    "image": "https://images.pokemontcg.io/20.png",
-    "amount": 2
-  },
-  {
-    "name": "Dan",
+    "name": "Nemona",
     "image": "https://images.pokemontcg.io/20.png",
     "amount": 4
   },
   {
-    "name": "Evolution Incense",
-    "image": "https://images.pokemontcg.io/20.png",
-    "amount": 1
-  },
-  {
-    "name": "Great Ball",
-    "image": "https://images.pokemontcg.io/20.png",
-    "amount": 2
-  },
-  {
-    "name": "Gym Trainer",
-    "image": "https://images.pokemontcg.io/20.png",
-    "amount": 2
-  },
-  {
-    "name": "Hop",
+    "name": "Youngster",
     "image": "https://images.pokemontcg.io/20.png",
     "amount": 4
   },
   {
-    "name": "Pokémon Catcher",
+    "name": "Jacq",
     "image": "https://images.pokemontcg.io/20.png",
     "amount": 1
+  },
+  {
+    "name": "Energy Retrieval",
+    "image": "https://images.pokemontcg.io/20.png",
+    "amount": 2
+  },
+  {
+    "name": "Nest Ball",
+    "image": "https://images.pokemontcg.io/20.png",
+    "amount": 2
   },
   {
     "name": "Potion",
@@ -295,17 +292,22 @@ const deck3 = [
     "amount": 2
   },
   {
-    "name": "Sonia",
-    "image": "https://images.pokemontcg.io/20.png",
-    "amount": 1
-  },
-  {
     "name": "Switch",
     "image": "https://images.pokemontcg.io/20.png",
     "amount": 2
   },
   {
-    "name": "Grass Energy",
+    "name": "Ultra Ball",
+    "image": "https://images.pokemontcg.io/20.png",
+    "amount": 2
+  },
+  {
+    "name": "Pokégear 3.0",
+    "image": "https://images.pokemontcg.io/20.png",
+    "amount": 1
+  },
+  {
+    "name": "Basic Lightning Energy",
     "image": "https://images.pokemontcg.io/20.png",
     "amount": 18
   }
@@ -362,29 +364,29 @@ const deck3Button = document.getElementById('deck3Button');
 const closeButton = document.getElementsByClassName('close')[0];
 
 // Open the modal
-addCardButton.addEventListener('click', function() {
+addCardButton.addEventListener('click', function () {
   addCardModal.style.display = 'block';
 });
 
-deck1Button.addEventListener('click', function() {
+deck1Button.addEventListener('click', function () {
   displayCards(deck1);
 });
 
-deck2Button.addEventListener('click', function() {
+deck2Button.addEventListener('click', function () {
   displayCards(deck2);
 });
 
-deck3Button.addEventListener('click', function() {
+deck3Button.addEventListener('click', function () {
   displayCards(deck3);
 });
 
 // Close the modal
-closeButton.addEventListener('click', function() {
+closeButton.addEventListener('click', function () {
   addCardModal.style.display = 'none';
 });
 
 // Close the modal when clicking outside of it
-window.addEventListener('click', function(event) {
+window.addEventListener('click', function (event) {
   if (event.target == addCardModal) {
     addCardModal.style.display = 'none';
   }
@@ -393,7 +395,7 @@ window.addEventListener('click', function(event) {
 // Add Card functionality
 const addCardForm = document.getElementById('addCardForm');
 
-addCardForm.addEventListener('submit', function(event) {
+addCardForm.addEventListener('submit', function (event) {
   event.preventDefault();
 
   const cardNameInput = document.getElementById('cardName');
